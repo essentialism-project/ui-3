@@ -146,61 +146,51 @@ table {
 html,
 body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-.container {
-    width: 880px;
-    margin: auto;
-}
-
-
-/* Header Styles */
-
-header {
-    width: 100%;
-    display: flex;
-}
-
-header nav {
-    margin-top: 40px;
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-header .logo {
-    height: 50px;
-    width: 50px;
-}
-
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Roboto';
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+    .container {
+        width: 880px;
+        margin: auto;
+        background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+    }
+    /* Header Styles */
+    header {
+        width: 100%;
+        display: flex;
+    }
+    header nav {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+        background: #b0b0b0;
+    }
+    header nav a {
+        text-decoration: none;
+        color: black;
+    }
+    header nav a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+    header .logo {
+        height: 50px;
+        width: 50px;
+    }
+    /* Call To Action (CTA) Styles */
+    .cta {
+        display: flex;
+        margin-top: 72px;
+        justify-content: flex-end;
+    }
 }
 
 .cta .cta-text {
@@ -215,18 +205,24 @@ header .logo {
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+    background: #00897B;
+    font-family: 'Roboto';
+    left: 8.27%;
+    right: 8.27%;
+    background: #00897B;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .cta .cta-text button:hover {
-    background: black;
-    color: white;
+    background: white;
+    color: #00897B;
 }
 
 
@@ -239,6 +235,7 @@ header .logo {
     padding: 35px 0;
     font-size: 16px;
     line-height: 18px;
+    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
 }
 
 .main-content .top-content {
@@ -258,8 +255,68 @@ header .logo {
     padding-right: 20px;
 }
 
+.tabs {
+    width: 100%;
+}
+
+.tabs .tabs-items {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.tabs .tabs-item {
+    display: none;
+    width: 75%;
+}
+
+.tabs .tabs-item .tabs-item-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.tabs .tabs-item-selected {
+    display: block;
+}
+
+.tabs .tabs-links {
+    display: flex;
+    background-color: white;
+}
+
+.tabs .tabs-link {
+    padding: 20px 25px;
+    font-size: 24px;
+    background-color: white;
+    border-right: 1px solid white;
+    color: black;
+    cursor: pointer;
+}
+
+.tabs .tabs-link:hover {
+    background-color: #00897B;
+}
+
+.tabs .tabs-link-selected {
+    z-index: 2;
+    border-right: 1px solid #00897B;
+    background-color: #ffffff;
+    color: black;
+}
+
+.tabs .tabs-link-selected:hover {
+    background-color: #ffffff;
+}
+
 
 /* Contact Styles */
+
+.contact {
+    background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
+}
 
 .contact p {
     margin: 15px 0;
@@ -279,9 +336,11 @@ footer {
 @media (max-width: 800px) {
     .container {
         width: 100%;
+        background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
     }
     header {
         flex-wrap: wrap;
+        background: #E5E5E5;
     }
     header nav {
         width: 768px;
