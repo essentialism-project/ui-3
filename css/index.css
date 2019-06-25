@@ -136,9 +136,6 @@ table {
     border-spacing: 0;
 }
 
-
-/* Set every element's box-sizing to border-box */
-
 * {
     box-sizing: border-box;
 }
@@ -147,50 +144,69 @@ html,
 body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: 'Roboto';
-        letter-spacing: 1px;
-        margin-bottom: 15px;
-    }
-    .container {
-        width: 880px;
-        margin: auto;
-        background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
-    }
-    /* Header Styles */
-    header {
-        width: 100%;
-        display: flex;
-    }
-    header nav {
-        width: 100%;
-        height: 100%;
-        justify-content: space-between;
-        display: flex;
-        background: #b0b0b0;
-    }
-    header nav a {
-        text-decoration: none;
-        color: black;
-    }
-    header nav a:hover {
-        text-decoration: underline;
-        color: black;
-    }
-    header .logo {
-        height: 50px;
-        width: 50px;
-    }
-    /* Call To Action (CTA) Styles */
-    .cta {
-        display: flex;
-        margin-top: 72px;
-        justify-content: flex-end;
-    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Russo One', sans-serif;
+    color: #23293B;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    background: #b0b0b0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
 }
 
 .cta .cta-text {
@@ -255,6 +271,9 @@ body {
     padding-right: 20px;
 }
 
+
+/* Tabs */
+
 .tabs {
     width: 100%;
 }
@@ -309,6 +328,16 @@ body {
 
 .tabs .tabs-link-selected:hover {
     background-color: #ffffff;
+}
+
+.section .box {
+    padding: 40px;
+}
+
+.section .box .box-title {
+    font-size: 24px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 
@@ -380,6 +409,7 @@ footer {
 @media (max-width: 500px) {
     header {
         justify-content: center;
+        background: #E5E5E5;
     }
     header nav {
         width: 100%;
