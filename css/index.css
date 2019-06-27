@@ -162,6 +162,10 @@ h3 {
     font-size: 2.4rem;
 }
 
+h4 {
+    font-size: 2rem;
+}
+
 .container {
     width: 100%;
     margin: auto;
@@ -236,29 +240,29 @@ header nav a:hover {
     text-align: flex-start;
     letter-spacing: 5px;
     display: flex;
-    width: 100%;
     height: auto;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin-right: 82px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cta .cta-text .cta-headings {
     margin-bottom: 20px;
 }
 
 .cta .cta-text button {
     background: #00897B;
     font-family: 'Roboto';
-    left: 8.27%;
-    right: 8.27%;
-    background: #00897B;
     border-radius: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 28px;
     display: flex;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
     padding: 5px;
 }
 
@@ -267,11 +271,52 @@ header nav a:hover {
     color: #00897B;
 }
 
+.cta .box {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    border: 5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.cta .box .inner-box {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    border: 2px solid gray;
+}
+
+.cta .box button {
+    background: #00897B;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    text-align: flex-start;
+    height: 50px;
+}
+
+.cta .box button:hover {
+    background: white;
+    color: #00897B;
+}
+
+.cta img {
+    display: flex;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
 
 /* Main Content Styles */
 
 .main-content {
-    margin: 75px 0 35px 0;
     padding: 35px 0;
     font-size: 16px;
     line-height: 18px;
@@ -290,27 +335,43 @@ header nav a:hover {
 .main-content .bottom-content {
     display: flex;
 }
-.main-content .bottom-content p {
+.main-content .bottom-content .card {
+    display: flex;
+    border: 5px solid #C4C4C4;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-content .bottom-content .card p {
     padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 /* Tabs */
+.tab-section {
+    display: flex;
+    justify-content: center;
+}
 .tabs {
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 .tabs .tabs-items {
     width: 100%;
-    height: 300px;
     display: flex;
     justify-content: center;
     padding-top: 60px;
+    border: 2px solid #C4C4C4;
+    ;
 }
 .tabs .tabs-item {
     display: none;
-    width: 75%;
+    width: 95%;
 }
 .tabs .tabs-item .tabs-item-title {
     font-size: 24px;
@@ -321,33 +382,41 @@ header nav a:hover {
     display: block;
 }
 .tabs .tabs-links {
-    display: flex;
-    background-color: white;
-}
-.tabs .tabs-link {
-    padding: 20px 25px;
     font-size: 24px;
+    display: flex;
+    padding: 10px;
+    margin: 20px;
     background-color: white;
-    border-right: 1px solid white;
     color: black;
     cursor: pointer;
+    border: 1px solid #00897B;
 }
 .tabs .tabs-link:hover {
     background-color: #00897B;
 }
 .tabs .tabs-link-selected {
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
     border-right: 1px solid #00897B;
     background-color: #ffffff;
     color: black;
 }
 .tabs .tabs-link-selected:hover {
     background-color: #ffffff;
+    justify-content: center;
+    z-index: 2;
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-right: 1px solid #00897B;
 }
 .tabs .tabs-item-description {
     display: flex;
     width: 100%;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -367,8 +436,33 @@ header nav a:hover {
 }
 
 /* Contact Styles */
-.contact p {
-    margin: 15px 0;
+.contact {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.down-left {
+    display: flex;
+    justify-content: flex-start;
+}
+.down-middle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.s-m-item {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.down-left {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Footer Styles */
