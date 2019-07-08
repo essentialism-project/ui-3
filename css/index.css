@@ -345,16 +345,18 @@ header nav a:hover {
 
 .main-content .top-content {
     display: flex;
+    justify-content: center;
 }
 
 .main-content .middle-img {
-    display: block;
+    display: flex;
     margin: 30px auto;
+    justify-content: center;
 }
 
 .main-content .bottom-content {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: center;
 }
 
@@ -364,7 +366,7 @@ header nav a:hover {
     padding: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 30px;
+    margin: 25px;
 }
 
 .main-content .bottom-content .card a:first-child {
@@ -463,19 +465,11 @@ header nav a:hover {
     padding-top: 10px;
 }
 
-.prof-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    margin: 30px;
-    width: 50%;
-}
-
 .prof-image {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
+    margin-bottom: 20px;
 }
 
 
@@ -621,10 +615,33 @@ footer {
         align-content: space-between;
         height: 440px;
     }
+    .tab-section {
+        display: flex;
+        width: 80%;
+    }
     .prof-content {
         margin: 0;
     }
     .contact {
         margin: 20px;
+    }
+    .down-left {
+        margin-left: 30px;
+    }
+    .down-right {
+        margin-right: 30px;
+    }
+    .down-middle {
+        margin-right: 70px;
+    }
+    .social-media {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .s-m-item {
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
